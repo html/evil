@@ -1,0 +1,8 @@
+Format: http://svn.debian.org/wsvn/dep/web/deps/dep5.mdwn?op=file&rev=153
+Upstream-Name: Evil Rocket Framework
+Source: https://github.com/TeamRocketScience/EvilRocketFramework
+Upstream-Contact: Dmitry Bergstein <cto@trs.io>
+
+Files: *
+Copyright: 2010-2011 Team Rocket Science
+License: BSD-2-clause

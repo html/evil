@@ -1,0 +1,12 @@
+Package: evil-rocket-framework-php
+Section: web
+Essential: no
+Architecture: all
+Depends: libzend-framework-php
+Provides: evil-rocket-framework
+Priority: optional
+Version: 11.08-trs
+Maintainer: Dmitry Bergstein
+Description: Evil Rocket Framework
+Installed-Size: 20137901
+Vcs-git: git://github.com/TeamRocketScience/EvilRocketFramework.git

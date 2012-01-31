@@ -1,0 +1,28 @@
+{
+    "handler":{
+        "prefix":"",
+        "suffix":".php",
+        "src": [
+                "SOA/Service/GeoLocator/Hook",
+                "SOA/Service/Hook"
+        ]
+    },
+    "observers": {
+        "onUpdate": [
+            {
+                "handler":"helloWorld",
+                "src":["Evil/tests/Event"],
+                "default": "Default value"
+            }
+        ],
+        "onStart": [
+            {
+                "handler": "SOA_Call::make",
+                "default": {
+                    "service": "GeoLocator",
+                    "method": "locate"
+                }
+            }
+        ]
+    }
+}

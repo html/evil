@@ -1,0 +1,7 @@
+{
+    "username" : "admin",
+    "password" : "amp111",
+    "server" : "192.168.100.106",
+    "port" : "5038",
+    "wait" : "120"
+}

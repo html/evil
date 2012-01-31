@@ -1,0 +1,76 @@
+{
+    "method-to-variable" :
+    [
+        {
+            "class"  : "Evil_Action_Abstract",
+            "method" : "controller",
+            "field"  : "controller"
+        },
+        {
+            "class"  : "Evil_Action_Abstract",
+            "method" : "params",
+            "field"  : "params"
+        },
+        {
+            "class"  : "Evil_Action_Abstract",
+            "method" : "controllerName",
+            "field"  : "controllerName"
+        },
+        {
+            "class"  : "Evil_Action_Abstract",
+            "method" : "setControllerNameIntoView"
+        },
+        {
+            "class"  : "Evil_Action_Abstract",
+            "method" : "config",
+            "field"  : "config"
+        },
+        {
+            "class"  : "Evil_Action_Abstract",
+            "method" : "table",
+            "field"  : "table"
+        },
+        {
+            "class"  : "Evil_Action_Abstract",
+            "method" : "formConfig",
+            "field"  : "formConfig"
+        },
+        {
+            "class"  : "Evil_Action_Abstract",
+            "method" : "data",
+            "field"  : "data"
+        },
+        {
+            "class"  : "Evil_Action_Abstract",
+            "method" : "fillForm",
+            "field" : "fillForm"
+        },
+        {
+            "class"  : "Evil_Action_Abstract",
+            "method" : "setFormIntoView"
+        },
+        {
+            "class"  : "Evil_Action_Abstract",
+            "method" : "ifViewNotExistsRenderDefault"
+        }
+    ],
+
+    "paths" :
+    {
+        "configs" : "application/configs/",
+        "views"   : "application/views/scripts/"
+    },
+
+    "named" : true,
+
+    "autoLoad" :
+    [
+        [
+            "Evil_Action_List",
+            "__autoLoad"
+        ],
+            
+        "Evil_Action_Vote",
+        "Evil_Action_Share"
+    ]
+}

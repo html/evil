@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="ocweb" default="deploy" basedir=".">
+	<target name="deploy">
+		<echo msg="create deb-package" />
+		<delete>
+			<fileset dir=".">
+				<include name="*.deb" />
+			</fileset>
+		</delete>
+		<chmod file="${debDir}" mode="0755" />
+		<exec command="fakeroot dpkg-deb -b ${debDir} ${debDir}_$(date +%y.%m.%d)-trs_all.deb" />
+		<delete dir="${debDir}" />
+	</target>
+</project>

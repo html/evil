@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="evil" default="deploy" basedir=".">
+
+        <!-- variables -->
+        <property name="inc" value="jenkins" />
+        <property file="${inc}/config.pro" />
+
+        <!-- prepare project files -->
+        <target name="project">
+                <phing phingfile="${inc}/project.xml" />
+        </target>
+
+        <!-- build deb -->
+        <target name="deploy" depends="project">
+                <phing phingfile="${inc}/deploy.xml" />
+	</target>
+	
+</project>

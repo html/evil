@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="ocweb" default="project" basedir=".">
+	<target name="project">
+		<copy todir="${debDir}${pathInst}">
+			<fileset dir=".">
+				<exclude name="jenkins**" />
+				<exclude name=".**" />
+				<exclude name="build.xml" />
+			</fileset>
+		</copy>
+
+		<copy todir="${debDir}">
+			<fileset dir="jenkins">
+				<include name="DEBIAN/**" />
+			</fileset>
+		</copy>
+	</target>
+</project>
