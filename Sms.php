@@ -6,9 +6,9 @@
  * @author nur
  *
  * evil.sms.transport ="Evil_Sms_Sms24x7"
-    evil.sms.config.email = "nur.php@gmail.com"
-    evil.sms.config.password = "8ZvKkD5"
-    evil.sms.config.sender_name = "opencity.ru"
+    evil.sms.config.email = "example@mail.com"
+    evil.sms.config.password = "******"
+    evil.sms.config.sender_name = "example sender"
  * $config = array('transport);
  */
 class Evil_Sms implements Evil_TransportInterface
